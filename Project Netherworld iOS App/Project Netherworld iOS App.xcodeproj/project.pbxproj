@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C0B4A961599437C00E4BA64 /* DatabaseData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C0B4A951599437C00E4BA64 /* DatabaseData.m */; };
 		0C1D08731597F2B60053A34F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C1D08721597F2B60053A34F /* UIKit.framework */; };
 		0C1D08751597F2B60053A34F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C1D08741597F2B60053A34F /* Foundation.framework */; };
 		0C1D08771597F2B60053A34F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C1D08761597F2B60053A34F /* CoreGraphics.framework */; };
@@ -21,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C0B4A941599437C00E4BA64 /* DatabaseData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatabaseData.h; sourceTree = "<group>"; };
+		0C0B4A951599437C00E4BA64 /* DatabaseData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatabaseData.m; sourceTree = "<group>"; };
 		0C1D086E1597F2B60053A34F /* Project Netherworld iOS App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project Netherworld iOS App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C1D08721597F2B60053A34F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0C1D08741597F2B60053A34F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -100,6 +103,8 @@
 			children = (
 				0C1D08811597F2B60053A34F /* AppDelegate.h */,
 				0C1D08821597F2B60053A34F /* AppDelegate.m */,
+				0C0B4A941599437C00E4BA64 /* DatabaseData.h */,
+				0C0B4A951599437C00E4BA64 /* DatabaseData.m */,
 				0C1D08841597F2B60053A34F /* MainStoryboard_iPhone.storyboard */,
 				0C1D08871597F2B60053A34F /* MainStoryboard_iPad.storyboard */,
 				0C1D088A1597F2B60053A34F /* ViewController.h */,
@@ -210,6 +215,7 @@
 				0C1D087F1597F2B60053A34F /* main.m in Sources */,
 				0C1D08831597F2B60053A34F /* AppDelegate.m in Sources */,
 				0C1D088C1597F2B60053A34F /* ViewController.m in Sources */,
+				0C0B4A961599437C00E4BA64 /* DatabaseData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +255,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -264,6 +271,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -275,6 +283,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -284,6 +293,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -296,6 +306,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Project Netherworld iOS App/Project Netherworld iOS App-Prefix.pch";
 				INFOPLIST_FILE = "Project Netherworld iOS App/Project Netherworld iOS App-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/facebook-ios-sdk\"",
@@ -311,6 +322,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Project Netherworld iOS App/Project Netherworld iOS App-Prefix.pch";
 				INFOPLIST_FILE = "Project Netherworld iOS App/Project Netherworld iOS App-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/facebook-ios-sdk\"",
@@ -339,6 +351,7 @@
 				0C1D08911597F2B60053A34F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

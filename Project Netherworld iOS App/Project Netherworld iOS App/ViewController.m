@@ -7,6 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "AppDelegate.h"
+#import "FBConnect.h"
+#import "DatabaseData.h"
 
 @interface ViewController ()
 
@@ -35,4 +38,8 @@
     }
 }
 
+- (IBAction)logoutButtonClicked:(id)sender {
+    
+    [[[DatabaseData sharedInstance]facebook]logout];
+}
 @end
