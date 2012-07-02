@@ -8,13 +8,21 @@
 
 #import <UIKit/UIKit.h>
 #import "FBConnect.h"
+#import "DataSet.h"
 //test
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate,FBSessionDelegate>
 {
     Facebook *facebook;
+    DataSet *apiData;
+    NSMutableDictionary *userPermissions;
+
 }
 
 @property (strong, nonatomic) UIWindow *window;
 @property (nonatomic, retain) Facebook *facebook;
+@property (nonatomic, retain) DataSet *apiData;
+
+@property (nonatomic, retain) NSMutableDictionary *userPermissions;
+
 @end

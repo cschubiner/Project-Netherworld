@@ -7,8 +7,50 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FBConnect.h"
+#import <CoreLocation/CoreLocation.h>
 
-@interface ViewController : UIViewController
+
+@interface ViewController : UIViewController<FBRequestDelegate,
+FBDialogDelegate,
+UITableViewDataSource,
+UITableViewDelegate,
+CLLocationManagerDelegate>
+{
+    int currentAPICall;
+
+}
+
+typedef enum apiCall {
+    kAPILogout,
+    kAPIGraphUserPermissionsDelete,
+    kDialogPermissionsExtended,
+    kDialogRequestsSendToMany,
+    kAPIGetAppUsersFriendsNotUsing,
+    kAPIGetAppUsersFriendsUsing,
+    kAPIFriendsForDialogRequests,
+    kDialogRequestsSendToSelect,
+    kAPIFriendsForTargetDialogRequests,
+    kDialogRequestsSendToTarget,
+    kDialogFeedUser,
+    kAPIFriendsForDialogFeed,
+    kDialogFeedFriend,
+    kAPIGraphUserPermissions,
+    kAPIGraphMe,
+    kAPIGraphUserFriends,
+    kDialogPermissionsCheckin,
+    kDialogPermissionsCheckinForRecent,
+    kDialogPermissionsCheckinForPlaces,
+    kAPIGraphSearchPlace,
+    kAPIGraphUserCheckins,
+    kAPIGraphUserPhotosPost,
+    kAPIGraphUserVideosPost,
+} apiCall;
+
 - (IBAction)logoutButtonClicked:(id)sender;
+- (IBAction)postPhotoButton:(id)sender;
+- (IBAction)postVideoButton:(id)sender;
+
+
 
 @end

@@ -19,6 +19,7 @@
 		0C1D088C1597F2B60053A34F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C1D088B1597F2B60053A34F /* ViewController.m */; };
 		0C1D08A21597F2D80053A34F /* FBDialog.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0C1D08951597F2D80053A34F /* FBDialog.bundle */; };
 		0C1D08A31597F2D80053A34F /* libfacebook_ios_sdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C1D089B1597F2D80053A34F /* libfacebook_ios_sdk.a */; };
+		0CEEB3FB159F975100B9C8DB /* DataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CEEB3FA159F975100B9C8DB /* DataSet.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,8 @@
 		0C1D089F1597F2D80053A34F /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
 		0C1D08A01597F2D80053A34F /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
 		0C1D08A11597F2D80053A34F /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		0CEEB3F9159F975100B9C8DB /* DataSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataSet.h; sourceTree = "<group>"; };
+		0CEEB3FA159F975100B9C8DB /* DataSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataSet.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +112,8 @@
 				0C1D08871597F2B60053A34F /* MainStoryboard_iPad.storyboard */,
 				0C1D088A1597F2B60053A34F /* ViewController.h */,
 				0C1D088B1597F2B60053A34F /* ViewController.m */,
+				0CEEB3F9159F975100B9C8DB /* DataSet.h */,
+				0CEEB3FA159F975100B9C8DB /* DataSet.m */,
 				0C1D08791597F2B60053A34F /* Supporting Files */,
 			);
 			path = "Project Netherworld iOS App";
@@ -216,6 +221,7 @@
 				0C1D08831597F2B60053A34F /* AppDelegate.m in Sources */,
 				0C1D088C1597F2B60053A34F /* ViewController.m in Sources */,
 				0C0B4A961599437C00E4BA64 /* DatabaseData.m in Sources */,
+				0CEEB3FB159F975100B9C8DB /* DataSet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
