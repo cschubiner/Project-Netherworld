@@ -11,8 +11,7 @@
 #import "DataSet.h"
 //test
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate,FBSessionDelegate>
-{
+@interface AppDelegate : UIResponder <UIApplicationDelegate,FBSessionDelegate> {
     Facebook *facebook;
     DataSet *apiData;
     NSMutableDictionary *userPermissions;
